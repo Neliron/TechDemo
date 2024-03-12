@@ -1,0 +1,26 @@
+<h1>Eaton technical demonstration</h1>
+<div ng-controller="AppComponent" class="container">
+  <h2>Devices</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Device name</th>
+        <th>Temperature</th>
+        <th>Usage</th>
+        <th>Is Overcloacked</th>
+        <th>Fan speed</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (device of devices; track $index){
+        <tr>
+          <td>{{device["metrics"]["Name"]}}</td>
+          <td>{{device["metrics"]["Temperature"]}}</td>
+          <td>{{device["metrics"]["Usage"]}}</td>
+          <td>{{device["metrics"]["Is Overcloacked"]}}</td>
+          <td>{{device["metrics"]["Fan speed"]}}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>
