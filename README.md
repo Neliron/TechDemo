@@ -2,7 +2,7 @@
 
 Pour lancer le backend sur IntelliJ :
 
-    Créer une build Application, avec la classe "com.eaton.techDemo.TechDemoApplication".
+    Créer un build Application, avec la classe "com.eaton.techDemo.TechDemoApplication".
     Lancer le build.
     Le backend devrait être accessible à l'adresse http://localhost:8080/devices/getDevices (qui devrait renvoyer un JSON contenant tous les devices ainsi que leurs métriques).
 
