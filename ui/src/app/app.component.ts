@@ -1,16 +1,13 @@
 import { Component, Injectable, AfterViewInit, Inject } from '@angular/core';
-import { Observable, Observer, Subject, interval, delay } from 'rxjs';
-import { takeUntil } from 'rxjs/operators';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Location, LocationStrategy, PathLocationStrategy, DOCUMENT } from '@angular/common';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [HttpClientModule],
   templateUrl: `./app.component.html`,
-  styleUrls: ['./app.component.css'],
-  providers: [Location, {provide: LocationStrategy, useClass: PathLocationStrategy}]
+  styleUrls: ['./app.component.css']
 })
 
 @Injectable({
